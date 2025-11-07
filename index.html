@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière - Temukan Aroma Kemewahan Anda</title>
+
+  <!-- ✅ META SEO -->
+  <meta name="description" content="Lumière adalah parfum mewah dengan aroma elegan yang tahan lama. Temukan koleksi eksklusif kami dan rayakan keharuman pribadi Anda.">
+  <meta name="keywords" content="parfum mewah, parfum wanita, parfum pria, lumiere perfume, wewangian elegan, parfum tahan lama">
+  <meta name="author" content="Lumière Indonesia">
+  <meta property="og:title" content="Lumière - Temukan Aroma Kemewahan Anda">
+  <meta property="og:description" content="Parfum mewah dengan aroma tahan lama, elegan, dan eksklusif.">
+  <meta property="og:image" content="URL_gambar_utama.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- ✅ FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --soft-pink: #f8e1e7;
+      --deep-purple: #2c0735;
+      --gold: #d4af37;
+      --light-gray: #f9f9f9;
+      --dark-gray: #333;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-gray);
+      color: var(--dark-gray);
+      min-height: max(884px, 100dvh);
+    }
+
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Animations */
+    .fadeIn { animation: fadeIn 1.5s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+
+    .slideIn { animation: slideIn 1s ease-in-out; }
+    @keyframes slideIn { from {transform: translateY(30px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+
+    .scaleHover:hover { transform: scale(1.05); transition: transform 0.3s; }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+
+    /* Popup style */
+    .popup {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- 🔹 Navbar -->
+  <nav class="flex justify-between items-center px-8 py-5 bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="text-2xl font-display text-deep-purple font-bold">Lumière</div>
+    <div class="space-x-6 text-gray-600">
+      <a href="#produk" class="hover:text-deep-purple">Produk</a>
+      <a href="#testimoni" class="hover:text-deep-purple">Testimoni</a>
+      <a href="#kontak" class="hover:text-deep-purple">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-soft-pink to-white fadeIn pt-20">
+    <h1 class="text-5xl md:text-6xl font-display text-deep-purple mb-6">Temukan Aroma Kemewahan Anda</h1>
+    <p class="text-lg text-gray-700 max-w-xl mb-8">Lumière menghadirkan parfum dengan aroma elegan, tahan lama, dan dirancang untuk memancarkan pesona pribadi Anda.</p>
+    <button class="bg-gold text-deep-purple px-8 py-3 rounded-full font-bold hover:scale-105 transition">Belanja Sekarang</button>
+  </section>
+
+  <!-- 🔹 Produk Section -->
+  <section id="produk" class="py-20 bg-white slideIn">
+    <h2 class="text-4xl font-display text-center text-deep-purple mb-12">Produk Terlaris Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-8 max-w-6xl mx-auto">
+      <div class="bg-soft-pink rounded-2xl p-6 text-center shadow-md scaleHover">
+        <img src="parfum1.jpg" alt="Lumière Elegance" class="mx-auto mb-4 rounded-lg" loading="lazy">
+        <h3 class="text-xl font-bold text-deep-purple mb-2">Lumière Elegance</h3>
+        <p class="text-gray-600 mb-4">Aroma floral lembut untuk kesan feminin dan mewah.</p>
+        <p class="text-gold font-bold mb-4">Rp 450.000</p>
+        <button class="bg-deep-purple text-white px-6 py-2 rounded-full hover:bg-gold hover:text-deep-purple transition">Beli Sekarang</button>
+      </div>
+      <div class="bg-soft-pink rounded-2xl p-6 text-center shadow-md scaleHover">
+        <img src="parfum2.jpg" alt="Lumière Noir" class="mx-auto mb-4 rounded-lg" loading="lazy">
+        <h3 class="text-xl font-bold text-deep-purple mb-2">Lumière Noir</h3>
+        <p class="text-gray-600 mb-4">Aroma woody dan musky yang kuat untuk karakter elegan.</p>
+        <p class="text-gold font-bold mb-4">Rp 480.000</p>
+        <button class="bg-deep-purple text-white px-6 py-2 rounded-full hover:bg-gold hover:text-deep-purple transition">Beli Sekarang</button>
+      </div>
+      <div class="bg-soft-pink rounded-2xl p-6 text-center shadow-md scaleHover">
+        <img src="parfum3.jpg" alt="Lumière Dawn" class="mx-auto mb-4 rounded-lg" loading="lazy">
+        <h3 class="text-xl font-bold text-deep-purple mb-2">Lumière Dawn</h3>
+        <p class="text-gray-600 mb-4">Keharuman segar citrus untuk semangat pagi yang penuh energi.</p>
+        <p class="text-gold font-bold mb-4">Rp 420.000</p>
+        <button class="bg-deep-purple text-white px-6 py-2 rounded-full hover:bg-gold hover:text-deep-purple transition">Beli Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 CTA Section -->
+  <section class="bg-deep-purple text-white py-16 text-center">
+    <h2 class="text-3xl font-display font-bold">Siap Menemukan Aroma Anda?</h2>
+    <p class="mt-4 text-lg">Dapatkan pengalaman mewah dalam setiap semprotan Lumière.</p>
+    <button class="mt-6 bg-gold text-deep-purple px-8 py-3 rounded-full font-bold hover:scale-105 transition">Beli Sekarang</button>
+  </section>
+
+  <!-- 🔹 Testimoni Section -->
+  <section id="testimoni" class="py-20 bg-soft-pink">
+    <h2 class="text-4xl font-display text-center text-deep-purple mb-12">Apa Kata Mereka</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-6xl mx-auto">
+      <div class="bg-white rounded-2xl p-6 shadow-md text-center scaleHover">
+        <p class="italic mb-4">“Aromanya elegan dan tahan lama banget. Setiap semprot langsung berasa classy.”</p>
+        <h4 class="font-bold text-deep-purple">— Amara, Jakarta</h4>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-md text-center scaleHover">
+        <p class="italic mb-4">“Desain botolnya cantik, dan aromanya lembut tapi berkarakter. Suka banget!”</p>
+        <h4 class="font-bold text-deep-purple">— Citra, Bandung</h4>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-md text-center scaleHover">
+        <p class="italic mb-4">“Saya pakai Lumière Noir setiap hari kerja, banyak yang tanya parfum apa ini!”</p>
+        <h4 class="font-bold text-deep-purple">— Nadine, Bali</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer id="kontak" class="bg-dark-gray text-soft-pink py-10 text-center">
+    <p class="text-sm">&copy; 2025 <strong>Lumière</strong>. Semua hak cipta dilindungi.</p>
+    <p class="mt-2 text-xs">
+      Instagram: <a href="https://instagram.com/lumiere.perfume" class="underline">@lumiere.perfume</a> |
+      Email: <a href="mailto:contact@lumiere.id" class="underline">contact@lumiere.id</a>
+    </p>
+  </footer>
+
+  <!-- 🔹 Popup Promo -->
+  <div id="promoPopup" class="popup fixed inset-0 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-8 rounded-2xl shadow-lg text-center max-w-sm mx-auto">
+      <h2 class="text-2xl font-display text-deep-purple mb-4">Promo Spesial!</h2>
+      <p class="mb-6 text-gray-700">Nikmati diskon 15% untuk pembelian pertama Anda!</p>
+      <button id="closePopup" class="bg-gold text-deep-purple px-6 py-2 rounded-full font-bold hover:scale-105 transition">Tutup</button>
+    </div>
+  </div>
+
+  <script>
+    // Popup muncul 5 detik setelah halaman dimuat
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        if (!sessionStorage.getItem('promoShown')) {
+          document.getElementById('promoPopup').classList.remove('hidden');
+          sessionStorage.setItem('promoShown', 'true');
+        }
+      }, 5000);
+    });
+
+    // Tutup popup
+    document.getElementById('closePopup').addEventListener('click', () => {
+      document.getElementById('promoPopup').classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>
